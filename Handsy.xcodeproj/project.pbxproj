@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1E42DDFC804362B5FE5D66 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5C16ED441D4F98837A4370 /* libPods-Specs.a */; };
 		94C85D07163EA0F200EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
 		94C85D16163EA0F200EDF782 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D15163EA0F200EDF782 /* SenTestingKit.framework */; };
 		94C85D18163EA0F200EDF782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D17163EA0F200EDF782 /* UIKit.framework */; };
@@ -38,14 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		94C85D03163EA0F200EDF782 /* libHandsy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHandsy.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		94C85D06163EA0F200EDF782 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94C85D06163EA0F200EDF782 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94C85D0A163EA0F200EDF782 /* Handsy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handsy-Prefix.pch"; sourceTree = "<group>"; };
 		94C85D14163EA0F200EDF782 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94C85D15163EA0F200EDF782 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		94C85D17163EA0F200EDF782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		94C85D15163EA0F200EDF782 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		94C85D17163EA0F200EDF782 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		94C85D34163EA11F00EDF782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94C85D35163EA11F00EDF782 /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		FB5C16ED441D4F98837A4370 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 				94C85D18163EA0F200EDF782 /* UIKit.framework in Frameworks */,
 				94C85D19163EA0F200EDF782 /* Foundation.framework in Frameworks */,
 				94C85D1C163EA0F200EDF782 /* libHandsy.a in Frameworks */,
+				8C1E42DDFC804362B5FE5D66 /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,7 @@
 				94C85D32163EA11F00EDF782 /* Specs */,
 				94C85D05163EA0F200EDF782 /* Frameworks */,
 				94C85D04163EA0F200EDF782 /* Products */,
+				30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,7 @@
 				94C85D06163EA0F200EDF782 /* Foundation.framework */,
 				94C85D15163EA0F200EDF782 /* SenTestingKit.framework */,
 				94C85D17163EA0F200EDF782 /* UIKit.framework */,
+				FB5C16ED441D4F98837A4370 /* libPods-Specs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 				94C85D10163EA0F200EDF782 /* Frameworks */,
 				94C85D11163EA0F200EDF782 /* Resources */,
 				94C85D12163EA0F200EDF782 /* ShellScript */,
+				DEB9829222514C458D1DE0B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +230,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		DEB9829222514C458D1DE0B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -336,11 +357,8 @@
 		};
 		94C85D2C163EA0F200EDF782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
@@ -351,11 +369,8 @@
 		};
 		94C85D2D163EA0F200EDF782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
