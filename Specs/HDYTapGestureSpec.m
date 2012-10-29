@@ -6,29 +6,9 @@
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#define EXP_SHORTHAND
-#import <Expecta/Expecta.h>
-#import <Specta/Specta.h>
-
+#import "HDYSpecHelper.h"
+#import "HDYTestViewController.h"
 #import "HDYTapGesture.h"
-
-@interface HDYTestViewController : UIViewController
-@property (nonatomic, getter = hasReceivedAction) BOOL receivedAction;
-- (void)action:(id)sender;
-@end
-
-@implementation HDYTestViewController
-
-- (void)action:(id)sender
-{
-    self.receivedAction = YES;
-}
-
-@end
-
-void(^addViewControllerToHierarchy)(UIViewController *vc) = ^(UIViewController *vc) {
-    [[[UIApplication sharedApplication] keyWindow] setRootViewController:vc];
-};
 
 SpecBegin(HDYTapGesture)
 
@@ -41,7 +21,7 @@ describe(@"A tap gesture", ^{
         [button addTarget:viewController action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
         [[viewController view] addSubview:button];
         
-        addViewControllerToHierarchy(viewController);
+        [[[UIApplication sharedApplication] keyWindow] setRootViewController:viewController];
         
         HDYTapGesture *tapGesture = [[HDYTapGesture alloc] init];
         [tapGesture setPosition:[button center]];
@@ -57,7 +37,7 @@ describe(@"A tap gesture", ^{
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:viewController action:@selector(action:)];
         [[viewController navigationItem] setLeftBarButtonItem:addButton];
         
-        addViewControllerToHierarchy(navigationController);
+        [[[UIApplication sharedApplication] keyWindow] setRootViewController:navigationController];
         
         HDYTapGesture *tapGesture = [[HDYTapGesture alloc] init];
         [tapGesture setPosition:CGPointMake(22, 22)];
