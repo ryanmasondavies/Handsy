@@ -14,6 +14,19 @@
 		94C85D19163EA0F200EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
 		94C85D1C163EA0F200EDF782 /* libHandsy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D03163EA0F200EDF782 /* libHandsy.a */; };
 		94C85D36163EA11F00EDF782 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D33163EA11F00EDF782 /* InfoPlist.strings */; };
+		94C85D41163EA33400EDF782 /* HDYTapGestureSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D40163EA33400EDF782 /* HDYTapGestureSpec.m */; };
+		94C85D4A163EA4C400EDF782 /* HDYTapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D49163EA4C400EDF782 /* HDYTapGesture.m */; };
+		94C85D7D163EAB0800EDF782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D17163EA0F200EDF782 /* UIKit.framework */; };
+		94C85D7E163EAB0800EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
+		94C85D7F163EAB0800EDF782 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */; };
+		94C85D85163EAB0800EDF782 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D83163EAB0800EDF782 /* InfoPlist.strings */; };
+		94C85D87163EAB0800EDF782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D86163EAB0800EDF782 /* main.m */; };
+		94C85D8B163EAB0800EDF782 /* HDYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D8A163EAB0800EDF782 /* HDYAppDelegate.m */; };
+		94C85D8D163EAB0800EDF782 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D8C163EAB0800EDF782 /* Default.png */; };
+		94C85D8F163EAB0800EDF782 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D8E163EAB0800EDF782 /* Default@2x.png */; };
+		94C85D91163EAB0800EDF782 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D90163EAB0800EDF782 /* Default-568h@2x.png */; };
+		94C85DA0163EBAA600EDF782 /* UITouch+HDYInternals.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D9F163EBAA600EDF782 /* UITouch+HDYInternals.m */; };
+		94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +36,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 94C85D02163EA0F200EDF782;
 			remoteInfo = Handsy;
+		};
+		94C85D95163EAB6100EDF782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C85CFA163EA0F200EDF782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94C85D7A163EAB0800EDF782;
+			remoteInfo = TestApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +68,24 @@
 		94C85D17163EA0F200EDF782 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		94C85D34163EA11F00EDF782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94C85D35163EA11F00EDF782 /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		94C85D40163EA33400EDF782 /* HDYTapGestureSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYTapGestureSpec.m; sourceTree = "<group>"; };
+		94C85D48163EA4C400EDF782 /* HDYTapGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYTapGesture.h; sourceTree = "<group>"; };
+		94C85D49163EA4C400EDF782 /* HDYTapGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYTapGesture.m; sourceTree = "<group>"; };
+		94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94C85D7B163EAB0800EDF782 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C85D82163EAB0800EDF782 /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
+		94C85D84163EAB0800EDF782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94C85D86163EAB0800EDF782 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94C85D88163EAB0800EDF782 /* TestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestApp-Prefix.pch"; sourceTree = "<group>"; };
+		94C85D89163EAB0800EDF782 /* HDYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDYAppDelegate.h; sourceTree = "<group>"; };
+		94C85D8A163EAB0800EDF782 /* HDYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDYAppDelegate.m; sourceTree = "<group>"; };
+		94C85D8C163EAB0800EDF782 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		94C85D8E163EAB0800EDF782 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		94C85D90163EAB0800EDF782 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		94C85D9E163EBAA600EDF782 /* UITouch+HDYInternals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+HDYInternals.h"; sourceTree = "<group>"; };
+		94C85D9F163EBAA600EDF782 /* UITouch+HDYInternals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+HDYInternals.m"; sourceTree = "<group>"; };
+		94C85DA5163EBCF100EDF782 /* UIEvent+HDYTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIEvent+HDYTouch.h"; sourceTree = "<group>"; };
+		94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+HDYTouch.m"; sourceTree = "<group>"; };
 		FB5C16ED441D4F98837A4370 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +110,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94C85D78163EAB0800EDF782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C85D7D163EAB0800EDF782 /* UIKit.framework in Frameworks */,
+				94C85D7E163EAB0800EDF782 /* Foundation.framework in Frameworks */,
+				94C85D7F163EAB0800EDF782 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				94C85D08163EA0F200EDF782 /* Handsy */,
+				94C85D80163EAB0800EDF782 /* TestApp */,
 				94C85D32163EA11F00EDF782 /* Specs */,
 				94C85D05163EA0F200EDF782 /* Frameworks */,
 				94C85D04163EA0F200EDF782 /* Products */,
@@ -91,6 +140,7 @@
 			children = (
 				94C85D03163EA0F200EDF782 /* libHandsy.a */,
 				94C85D14163EA0F200EDF782 /* Specs.octest */,
+				94C85D7B163EAB0800EDF782 /* TestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +152,7 @@
 				94C85D15163EA0F200EDF782 /* SenTestingKit.framework */,
 				94C85D17163EA0F200EDF782 /* UIKit.framework */,
 				FB5C16ED441D4F98837A4370 /* libPods-Specs.a */,
+				94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +160,12 @@
 		94C85D08163EA0F200EDF782 /* Handsy */ = {
 			isa = PBXGroup;
 			children = (
+				94C85D48163EA4C400EDF782 /* HDYTapGesture.h */,
+				94C85D49163EA4C400EDF782 /* HDYTapGesture.m */,
+				94C85DA5163EBCF100EDF782 /* UIEvent+HDYTouch.h */,
+				94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */,
+				94C85D9E163EBAA600EDF782 /* UITouch+HDYInternals.h */,
+				94C85D9F163EBAA600EDF782 /* UITouch+HDYInternals.m */,
 				94C85D09163EA0F200EDF782 /* Supporting Files */,
 			);
 			path = Handsy;
@@ -125,6 +182,7 @@
 		94C85D32163EA11F00EDF782 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				94C85D40163EA33400EDF782 /* HDYTapGestureSpec.m */,
 				94C85D38163EA12400EDF782 /* Supporting Files */,
 			);
 			path = Specs;
@@ -135,6 +193,30 @@
 			children = (
 				94C85D33163EA11F00EDF782 /* InfoPlist.strings */,
 				94C85D35163EA11F00EDF782 /* Specs-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94C85D80163EAB0800EDF782 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				94C85D89163EAB0800EDF782 /* HDYAppDelegate.h */,
+				94C85D8A163EAB0800EDF782 /* HDYAppDelegate.m */,
+				94C85D81163EAB0800EDF782 /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		94C85D81163EAB0800EDF782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94C85D82163EAB0800EDF782 /* TestApp-Info.plist */,
+				94C85D83163EAB0800EDF782 /* InfoPlist.strings */,
+				94C85D86163EAB0800EDF782 /* main.m */,
+				94C85D88163EAB0800EDF782 /* TestApp-Prefix.pch */,
+				94C85D8C163EAB0800EDF782 /* Default.png */,
+				94C85D8E163EAB0800EDF782 /* Default@2x.png */,
+				94C85D90163EAB0800EDF782 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -173,11 +255,29 @@
 			);
 			dependencies = (
 				94C85D1B163EA0F200EDF782 /* PBXTargetDependency */,
+				94C85D96163EAB6100EDF782 /* PBXTargetDependency */,
 			);
 			name = Specs;
 			productName = HandsyTests;
 			productReference = 94C85D14163EA0F200EDF782 /* Specs.octest */;
 			productType = "com.apple.product-type.bundle";
+		};
+		94C85D7A163EAB0800EDF782 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C85D92163EAB0800EDF782 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				94C85D77163EAB0800EDF782 /* Sources */,
+				94C85D78163EAB0800EDF782 /* Frameworks */,
+				94C85D79163EAB0800EDF782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 94C85D7B163EAB0800EDF782 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,6 +302,7 @@
 			projectRoot = "";
 			targets = (
 				94C85D02163EA0F200EDF782 /* Handsy */,
+				94C85D7A163EAB0800EDF782 /* TestApp */,
 				94C85D13163EA0F200EDF782 /* Specs */,
 			);
 		};
@@ -213,6 +314,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C85D36163EA11F00EDF782 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C85D79163EAB0800EDF782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C85D85163EAB0800EDF782 /* InfoPlist.strings in Resources */,
+				94C85D8D163EAB0800EDF782 /* Default.png in Resources */,
+				94C85D8F163EAB0800EDF782 /* Default@2x.png in Resources */,
+				94C85D91163EAB0800EDF782 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C85D4A163EA4C400EDF782 /* HDYTapGesture.m in Sources */,
+				94C85DA0163EBAA600EDF782 /* UITouch+HDYInternals.m in Sources */,
+				94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +375,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C85D41163EA33400EDF782 /* HDYTapGestureSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C85D77163EAB0800EDF782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C85D87163EAB0800EDF782 /* main.m in Sources */,
+				94C85D8B163EAB0800EDF782 /* HDYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +396,11 @@
 			target = 94C85D02163EA0F200EDF782 /* Handsy */;
 			targetProxy = 94C85D1A163EA0F200EDF782 /* PBXContainerItemProxy */;
 		};
+		94C85D96163EAB6100EDF782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94C85D7A163EAB0800EDF782 /* TestApp */;
+			targetProxy = 94C85D95163EAB6100EDF782 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -278,6 +408,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				94C85D34163EA11F00EDF782 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		94C85D83163EAB0800EDF782 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C85D84163EAB0800EDF782 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -360,10 +498,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -372,11 +512,48 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		94C85D93163EAB0800EDF782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		94C85D94163EAB0800EDF782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -406,6 +583,15 @@
 			buildConfigurations = (
 				94C85D2C163EA0F200EDF782 /* Debug */,
 				94C85D2D163EA0F200EDF782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C85D92163EAB0800EDF782 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C85D93163EAB0800EDF782 /* Debug */,
+				94C85D94163EAB0800EDF782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
