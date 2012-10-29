@@ -8,11 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const HDYTapGestureClassIdentifier;
+enum {
+    HDYTapGestureType = 0,
+};
+typedef NSInteger HDYGestureType;
 
 @interface UIView (HDYGestures)
 
-+ (void)registerGestureClass:(Class)gestureClass forIdentifier:(NSString *)identifier;
++ (void)registerClass:(Class)gestureClass forGesturesOfType:(HDYGestureType)type;
++ (Class)registeredClassForGesturesOfType:(HDYGestureType)type;
+
 - (void)tap;
 
 @end

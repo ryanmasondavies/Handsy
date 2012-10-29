@@ -9,8 +9,6 @@
 #import "UIView+HDYGestures.h"
 #import "HDYTapGesture.h"
 
-NSString * const HDYTapGestureClassIdentifier = @"TapGestureClass";
-
 @interface UIView (HDYGesturesPrivate)
 + (NSMutableDictionary *)registeredGestureClasses;
 @end
@@ -19,7 +17,7 @@ NSString * const HDYTapGestureClassIdentifier = @"TapGestureClass";
 
 + (void)initialize
 {
-    [self registerGestureClass:[HDYTapGesture class] forIdentifier:HDYTapGestureClassIdentifier];
+    [self registerClass:[HDYTapGesture class] forGesturesOfType:HDYTapGestureType];
 }
 
 + (NSMutableDictionary *)registeredGestureClasses
@@ -30,14 +28,19 @@ NSString * const HDYTapGestureClassIdentifier = @"TapGestureClass";
     return dictionary;
 }
 
-+ (void)registerGestureClass:(Class)gestureClass forIdentifier:(NSString *)identifier
++ (void)registerClass:(Class)gestureClass forGesturesOfType:(HDYGestureType)type
 {
-    [[self registeredGestureClasses] setObject:gestureClass forKey:identifier];
+    [[self registeredGestureClasses] setObject:gestureClass forKey:@(type)];
+}
+
++ (Class)registeredClassForGesturesOfType:(HDYGestureType)type
+{
+    return [[self registeredGestureClasses] objectForKey:@(type)];
 }
 
 - (void)tap
 {
-    Class tapGestureClass = [[[self class] registeredGestureClasses] objectForKey:HDYTapGestureClassIdentifier];
+    Class tapGestureClass = [[self class] registeredClassForGesturesOfType:HDYTapGestureType];
     HDYTapGesture *gesture = [[tapGestureClass alloc] init];
     [gesture performOnView:self];
 }

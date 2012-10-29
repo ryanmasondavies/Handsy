@@ -34,7 +34,7 @@
 SpecBegin(HDYViewGestures)
 
 beforeAll(^{
-    [UIView registerGestureClass:[HDYMockGesture class] forIdentifier:HDYTapGestureClassIdentifier];
+    [UIView registerClass:[HDYMockGesture class] forGesturesOfType:HDYTapGestureType];
 });
 
 describe(@"-tap", ^{
