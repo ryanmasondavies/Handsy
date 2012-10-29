@@ -6,13 +6,10 @@ For example, in order to press a button, the following code example would suffic
 
     [button tap];
 
-In order to press at a certain position, the following code could be used:
+-tap, by default, performs the gesture in the center of the given view.
+In order to tap a certain position, the following code could be used:
 
     [button tapAtPosition:CGPoint(32, 32)];
-
-Or to tap in the center of the button:
-
-    [button tapAtPosition:[button center]];
 
 This library uses private APIs, and so should not be used in production. However, it serves as very useful during testing.
 A big thanks to the Square crew, as much of the implementation is extracted from KIF (https://github.com/square/KIF).
