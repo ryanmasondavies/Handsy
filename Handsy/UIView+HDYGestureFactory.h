@@ -1,5 +1,5 @@
 //
-//  UIView+HDYGestures.h
+//  UIView+HDYGestureFactory.h
 //  Handsy
 //
 //  Created by Ryan Davies on 29/10/2012.
@@ -10,9 +10,9 @@
 
 @class HDYGestureFactory;
 
-@interface UIView (HDYGestures)
+@interface UIView (HDYGestureFactory)
 
-- (void)tap;
-- (void)tapAtPosition:(CGPoint)position;
++ (void)setGestureFactory:(HDYGestureFactory *)factory;
++ (HDYGestureFactory *)gestureFactory;
 
 @end

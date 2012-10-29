@@ -8,48 +8,50 @@
 
 #import "HDYSpecHelper.h"
 #import "UIView+HDYGestures.h"
+#import "UIView+HDYGestureFactory.h"
+#import "HDYGestureFactory.h"
 #import "HDYTapGesture.h"
-
-@interface HDYMockGesture : NSObject
-+ (id)sharedGesture;
-@end
-
-@implementation HDYMockGesture
-
-+ (id)sharedGesture
-{
-    static dispatch_once_t pred;
-    static HDYMockGesture *gesture = nil;
-    dispatch_once(&pred, ^{ gesture = [OCMockObject niceMockForClass:[HDYTapGesture class]]; });
-    return gesture;
-}
-
-+ (id)alloc
-{
-    return [self sharedGesture];
-}
-
-@end
 
 SpecBegin(HDYViewGestures)
 
-beforeAll(^{
-    [UIView registerClass:[HDYMockGesture class] forGesturesOfType:HDYTapGestureType];
+__block UIView *view;
+__block id gesture;
+
+before(^{
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)];
+    
+    // Create a gesture that we can make expectations on:
+    gesture = [OCMockObject partialMockForObject:[[HDYTapGesture alloc] init]];
+    
+    // Swap out the gesture factory:
+    id gestureFactory = [OCMockObject mockForClass:[HDYGestureFactory class]];
+    [[[gestureFactory stub] andReturn:gesture] tapGesture];
+    [UIView setGestureFactory:gestureFactory];
 });
 
 describe(@"-tap", ^{
-    __block UIView *view;
-    __block id mock;
-    
-    before(^{
-        view = [[UIView alloc] init];
-        mock = [HDYMockGesture sharedGesture];
+    it(@"should take place in the center of the view", ^{
+        [view tap];
+        expect([gesture position]).to.equal(CGPointMake(32, 32));
     });
     
-    it(@"should invoke -performOnView: on a new tap gesture", ^{
-        [[mock expect] performOnView:view];
+    it(@"should perform a tap gesture", ^{
+        [[gesture expect] performOnView:view];
         [view tap];
-        [mock verify];
+        [gesture verify];
+    });
+});
+
+describe(@"-tapAtPosition:", ^{
+    it(@"should take place at the specified position", ^{
+        [view tapAtPosition:CGPointMake(16, 16)];
+        expect([gesture position]).to.equal(CGPointMake(16, 16));
+    });
+    
+    it(@"should perform a tap gesture", ^{
+        [[gesture expect] performOnView:view];
+        [view tapAtPosition:CGPointMake(16, 16)];
+        [gesture verify];
     });
 });
 

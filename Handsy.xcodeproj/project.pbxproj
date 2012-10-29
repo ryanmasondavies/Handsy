@@ -29,6 +29,8 @@
 		94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */; };
 		94C85DAA163EC0AA00EDF782 /* HDYViewGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA9163EC0AA00EDF782 /* HDYViewGestures.m */; };
 		94C85DB4163EC3BA00EDF782 /* UIView+HDYGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */; };
+		94C85DC3163EDB9200EDF782 /* HDYGestureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */; };
+		94C85DC6163EDD7000EDF782 /* UIView+HDYGestureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,10 @@
 		94C85DAB163EC0C000EDF782 /* HDYSpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDYSpecHelper.h; sourceTree = "<group>"; };
 		94C85DB2163EC3BA00EDF782 /* UIView+HDYGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HDYGestures.h"; sourceTree = "<group>"; };
 		94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDYGestures.m"; sourceTree = "<group>"; };
+		94C85DC1163EDB9200EDF782 /* HDYGestureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYGestureFactory.h; sourceTree = "<group>"; };
+		94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYGestureFactory.m; sourceTree = "<group>"; };
+		94C85DC4163EDD7000EDF782 /* UIView+HDYGestureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HDYGestureFactory.h"; sourceTree = "<group>"; };
+		94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDYGestureFactory.m"; sourceTree = "<group>"; };
 		FB5C16ED441D4F98837A4370 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,10 +176,8 @@
 				94C85D49163EA4C400EDF782 /* HDYTapGesture.m */,
 				94C85DB2163EC3BA00EDF782 /* UIView+HDYGestures.h */,
 				94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */,
-				94C85DA5163EBCF100EDF782 /* UIEvent+HDYTouch.h */,
-				94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */,
-				94C85D9E163EBAA600EDF782 /* UITouch+HDYInternals.h */,
-				94C85D9F163EBAA600EDF782 /* UITouch+HDYInternals.m */,
+				94C85DC8163EDDC000EDF782 /* Touch events */,
+				94C85DC7163EDDB000EDF782 /* Gesture factory */,
 				94C85D09163EA0F200EDF782 /* Supporting Files */,
 			);
 			path = Handsy;
@@ -229,6 +233,28 @@
 				94C85D90163EAB0800EDF782 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94C85DC7163EDDB000EDF782 /* Gesture factory */ = {
+			isa = PBXGroup;
+			children = (
+				94C85DC1163EDB9200EDF782 /* HDYGestureFactory.h */,
+				94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */,
+				94C85DC4163EDD7000EDF782 /* UIView+HDYGestureFactory.h */,
+				94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */,
+			);
+			name = "Gesture factory";
+			sourceTree = "<group>";
+		};
+		94C85DC8163EDDC000EDF782 /* Touch events */ = {
+			isa = PBXGroup;
+			children = (
+				94C85DA5163EBCF100EDF782 /* UIEvent+HDYTouch.h */,
+				94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */,
+				94C85D9E163EBAA600EDF782 /* UITouch+HDYInternals.h */,
+				94C85D9F163EBAA600EDF782 /* UITouch+HDYInternals.m */,
+			);
+			name = "Touch events";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +405,8 @@
 				94C85DA0163EBAA600EDF782 /* UITouch+HDYInternals.m in Sources */,
 				94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */,
 				94C85DB4163EC3BA00EDF782 /* UIView+HDYGestures.m in Sources */,
+				94C85DC3163EDB9200EDF782 /* HDYGestureFactory.m in Sources */,
+				94C85DC6163EDD7000EDF782 /* UIView+HDYGestureFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
