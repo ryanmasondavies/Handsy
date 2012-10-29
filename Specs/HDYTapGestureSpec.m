@@ -7,8 +7,23 @@
 //
 
 #import "HDYSpecHelper.h"
-#import "HDYTestViewController.h"
 #import "HDYTapGesture.h"
+
+@interface HDYTestViewController : UIViewController
+@property (nonatomic, getter = hasReceivedAction) BOOL receivedAction;
+
+- (void)action:(id)sender;
+
+@end
+
+@implementation HDYTestViewController
+
+- (void)action:(id)sender
+{
+    self.receivedAction = YES;
+}
+
+@end
 
 SpecBegin(HDYTapGesture)
 

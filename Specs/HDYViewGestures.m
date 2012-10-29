@@ -7,9 +7,8 @@
 //
 
 #import "HDYSpecHelper.h"
-#import "HDYTestViewController.h"
-#import "HDYTapGesture.h"
 #import "UIView+HDYGestures.h"
+#import "HDYTapGesture.h"
 
 @interface HDYMockGesture : NSObject
 + (id)sharedGesture;
