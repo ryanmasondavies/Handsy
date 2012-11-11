@@ -16,3 +16,8 @@ This library uses private APIs, and so should not be used in production. However
 
 A big thanks to the Square crew, as much of the implementation is extracted from KIF (https://github.com/square/KIF).
 This library is very much a work in progress, and so the API may be subject to simplification and potentially drastic change.
+
+License
+=======
+
+This project is available under the MIT license. See the LICENSE file for details.
