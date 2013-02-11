@@ -14,6 +14,11 @@ In order to tap a certain position, the following code could be used:
 
 This library uses private APIs, and so should not be used in production.
 
+Installation
+============
+
+Handsy can be installed with CocoaPods. Just add `pod 'Handsy'` to your Podfile.
+
 License
 =======
 
