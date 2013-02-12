@@ -18,14 +18,16 @@ before(^{
 describe(@"-tap", ^{
     it(@"performs a tap in the center of the view", ^{
         [[tapViewController view] tap];
-        expect([tapViewController receivedTapAtPosition:[[tapViewController view] center]]).to.beTruthy();
+        BOOL received = [tapViewController receivedTapAtPosition:[[tapViewController view] center]];
+        [[@(received) should] beTrue];
     });
 });
 
 describe(@"-tapAtPosition:", ^{
     it(@"performs a tap at the specified location", ^{
         [[tapViewController view] tapAtPosition:CGPointMake(32, 32)];
-        expect([tapViewController receivedTapAtPosition:CGPointMake(32, 32)]).to.beTruthy();
+        BOOL received = [tapViewController receivedTapAtPosition:CGPointMake(32, 32)];
+        [[@(received) should] beTrue];
     });
 });
 

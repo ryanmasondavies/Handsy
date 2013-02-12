@@ -6,9 +6,8 @@
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#define EXP_SHORTHAND
-#import <Expecta/Expecta.h>
-#import <Specta/Specta.h>
+#import <Specify/Specify.h>
+#import <Posit/Posit.h>
 #import <OCMock/OCMock.h>
 
 #import "HDYTapViewController.h"

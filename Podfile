@@ -1,7 +1,7 @@
-platform :ios
+platform :ios, '5.0'
 
 target 'Specs' do
-  pod 'Specta'
-  pod 'Expecta'
+  pod 'Specify', '~> 0.0.2'
+  pod 'Posit', '~> 0.0.2'
   pod 'OCMock'
 end
