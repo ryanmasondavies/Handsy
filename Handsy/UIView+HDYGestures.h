@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class HDYGestureFactory;
-
 @interface UIView (HDYGestures)
 
 - (void)tap;

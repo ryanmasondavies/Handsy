@@ -10,3 +10,7 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
 #import <OCMock/OCMock.h>
+
+#import "HDYTapViewController.h"
+
+#import "Handsy.h"
