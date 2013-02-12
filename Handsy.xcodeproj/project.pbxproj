@@ -27,8 +27,6 @@
 		94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA6163EBCF100EDF782 /* UIEvent+HDYTouch.m */; };
 		94C85DAA163EC0AA00EDF782 /* HDYViewGesturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA9163EC0AA00EDF782 /* HDYViewGesturesSpec.m */; };
 		94C85DB4163EC3BA00EDF782 /* UIView+HDYGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */; };
-		94C85DC3163EDB9200EDF782 /* HDYGestureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */; };
-		94C85DC6163EDD7000EDF782 /* UIView+HDYGestureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */; };
 		94D813A916CAECB200EAB73F /* HDYTapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D813A816CAECB200EAB73F /* HDYTapViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +63,6 @@
 		30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		94C85D03163EA0F200EDF782 /* libHandsy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHandsy.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C85D06163EA0F200EDF782 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		94C85D0A163EA0F200EDF782 /* Handsy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handsy-Prefix.pch"; sourceTree = "<group>"; };
 		94C85D14163EA0F200EDF782 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C85D15163EA0F200EDF782 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		94C85D17163EA0F200EDF782 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,10 +88,6 @@
 		94C85DAB163EC0C000EDF782 /* HDYSpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDYSpecHelper.h; sourceTree = "<group>"; };
 		94C85DB2163EC3BA00EDF782 /* UIView+HDYGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HDYGestures.h"; sourceTree = "<group>"; };
 		94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDYGestures.m"; sourceTree = "<group>"; };
-		94C85DC1163EDB9200EDF782 /* HDYGestureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYGestureFactory.h; sourceTree = "<group>"; };
-		94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYGestureFactory.m; sourceTree = "<group>"; };
-		94C85DC4163EDD7000EDF782 /* UIView+HDYGestureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HDYGestureFactory.h"; sourceTree = "<group>"; };
-		94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HDYGestureFactory.m"; sourceTree = "<group>"; };
 		94D813A716CAECB200EAB73F /* HDYTapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYTapViewController.h; sourceTree = "<group>"; };
 		94D813A816CAECB200EAB73F /* HDYTapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYTapViewController.m; sourceTree = "<group>"; };
 		94D813AB16CAEDD300EAB73F /* Handsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handsy.h; sourceTree = "<group>"; };
@@ -173,23 +166,12 @@
 			isa = PBXGroup;
 			children = (
 				94D813AB16CAEDD300EAB73F /* Handsy.h */,
-				94C85D48163EA4C400EDF782 /* HDYTapGesture.h */,
-				94C85D49163EA4C400EDF782 /* HDYTapGesture.m */,
 				94C85DB2163EC3BA00EDF782 /* UIView+HDYGestures.h */,
 				94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */,
+				94D813AC16CAF4F400EAB73F /* Gestures */,
 				94C85DC8163EDDC000EDF782 /* Touch events */,
-				94C85DC7163EDDB000EDF782 /* Gesture factory */,
-				94C85D09163EA0F200EDF782 /* Supporting Files */,
 			);
 			path = Handsy;
-			sourceTree = "<group>";
-		};
-		94C85D09163EA0F200EDF782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				94C85D0A163EA0F200EDF782 /* Handsy-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		94C85D32163EA11F00EDF782 /* Specs */ = {
@@ -235,17 +217,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		94C85DC7163EDDB000EDF782 /* Gesture factory */ = {
-			isa = PBXGroup;
-			children = (
-				94C85DC1163EDB9200EDF782 /* HDYGestureFactory.h */,
-				94C85DC2163EDB9200EDF782 /* HDYGestureFactory.m */,
-				94C85DC4163EDD7000EDF782 /* UIView+HDYGestureFactory.h */,
-				94C85DC5163EDD7000EDF782 /* UIView+HDYGestureFactory.m */,
-			);
-			name = "Gesture factory";
-			sourceTree = "<group>";
-		};
 		94C85DC8163EDDC000EDF782 /* Touch events */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +235,15 @@
 				94D813A816CAECB200EAB73F /* HDYTapViewController.m */,
 			);
 			name = "Supporting Classes";
+			sourceTree = "<group>";
+		};
+		94D813AC16CAF4F400EAB73F /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				94C85D48163EA4C400EDF782 /* HDYTapGesture.h */,
+				94C85D49163EA4C400EDF782 /* HDYTapGesture.m */,
+			);
+			name = Gestures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,8 +393,6 @@
 				94C85DA0163EBAA600EDF782 /* UITouch+HDYInternals.m in Sources */,
 				94C85DA7163EBCF100EDF782 /* UIEvent+HDYTouch.m in Sources */,
 				94C85DB4163EC3BA00EDF782 /* UIView+HDYGestures.m in Sources */,
-				94C85DC3163EDB9200EDF782 /* HDYGestureFactory.m in Sources */,
-				94C85DC6163EDD7000EDF782 /* UIView+HDYGestureFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,8 +492,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Handsy.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -526,8 +502,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Handsy.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Handsy/Handsy-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

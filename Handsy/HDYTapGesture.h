@@ -6,11 +6,9 @@
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HDYTapGesture : NSObject
 @property (nonatomic) CGPoint position;
-
 - (void)performOnView:(UIView *)view;
-
 @end

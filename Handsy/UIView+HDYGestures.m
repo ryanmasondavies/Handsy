@@ -7,22 +7,18 @@
 //
 
 #import "UIView+HDYGestures.h"
-#import "UIView+HDYGestureFactory.h"
-#import "HDYGestureFactory.h"
 #import "HDYTapGesture.h"
 
 @implementation UIView (HDYGestures)
 
 - (void)tap
 {
-    HDYTapGesture *gesture = [[[self class] gestureFactory] tapGesture];
-    [gesture setPosition:[self center]];
-    [gesture performOnView:self];
+    [self tapAtPosition:[self center]];
 }
 
 - (void)tapAtPosition:(CGPoint)position
 {
-    HDYTapGesture *gesture = [[[self class] gestureFactory] tapGesture];
+    HDYTapGesture *gesture = [[HDYTapGesture alloc] init];
     [gesture setPosition:position];
     [gesture performOnView:self];
 }
