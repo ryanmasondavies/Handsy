@@ -10,13 +10,10 @@
 		8C1E42DDFC804362B5FE5D66 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5C16ED441D4F98837A4370 /* libPods-Specs.a */; };
 		94C85D07163EA0F200EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
 		94C85D16163EA0F200EDF782 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D15163EA0F200EDF782 /* SenTestingKit.framework */; };
-		94C85D18163EA0F200EDF782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D17163EA0F200EDF782 /* UIKit.framework */; };
 		94C85D19163EA0F200EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
 		94C85D1C163EA0F200EDF782 /* libHandsy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D03163EA0F200EDF782 /* libHandsy.a */; };
 		94C85D4A163EA4C400EDF782 /* HDYTapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D49163EA4C400EDF782 /* HDYTapGesture.m */; };
-		94C85D7D163EAB0800EDF782 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D17163EA0F200EDF782 /* UIKit.framework */; };
 		94C85D7E163EAB0800EDF782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D06163EA0F200EDF782 /* Foundation.framework */; };
-		94C85D7F163EAB0800EDF782 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */; };
 		94C85D85163EAB0800EDF782 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94C85D83163EAB0800EDF782 /* InfoPlist.strings */; };
 		94C85D87163EAB0800EDF782 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D86163EAB0800EDF782 /* main.m */; };
 		94C85D8B163EAB0800EDF782 /* HDYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85D8A163EAB0800EDF782 /* HDYAppDelegate.m */; };
@@ -28,6 +25,9 @@
 		94C85DAA163EC0AA00EDF782 /* HDYViewGesturesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DA9163EC0AA00EDF782 /* HDYViewGesturesSpec.m */; };
 		94C85DB4163EC3BA00EDF782 /* UIView+HDYGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C85DB3163EC3BA00EDF782 /* UIView+HDYGestures.m */; };
 		94D813A916CAECB200EAB73F /* HDYTapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D813A816CAECB200EAB73F /* HDYTapViewController.m */; };
+		94D813AE16CAF58600EAB73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D813AD16CAF58600EAB73F /* UIKit.framework */; };
+		94D813AF16CAF59400EAB73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D813AD16CAF58600EAB73F /* UIKit.framework */; };
+		94D813B016CAF59D00EAB73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D813AD16CAF58600EAB73F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +65,9 @@
 		94C85D06163EA0F200EDF782 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94C85D14163EA0F200EDF782 /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C85D15163EA0F200EDF782 /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		94C85D17163EA0F200EDF782 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		94C85D35163EA11F00EDF782 /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		94C85D48163EA4C400EDF782 /* HDYTapGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYTapGesture.h; sourceTree = "<group>"; };
 		94C85D49163EA4C400EDF782 /* HDYTapGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYTapGesture.m; sourceTree = "<group>"; };
-		94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		94C85D7B163EAB0800EDF782 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C85D82163EAB0800EDF782 /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
 		94C85D84163EAB0800EDF782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -91,6 +89,7 @@
 		94D813A716CAECB200EAB73F /* HDYTapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDYTapViewController.h; sourceTree = "<group>"; };
 		94D813A816CAECB200EAB73F /* HDYTapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDYTapViewController.m; sourceTree = "<group>"; };
 		94D813AB16CAEDD300EAB73F /* Handsy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handsy.h; sourceTree = "<group>"; };
+		94D813AD16CAF58600EAB73F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB5C16ED441D4F98837A4370 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C85D07163EA0F200EDF782 /* Foundation.framework in Frameworks */,
+				94D813AE16CAF58600EAB73F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C85D16163EA0F200EDF782 /* SenTestingKit.framework in Frameworks */,
-				94C85D18163EA0F200EDF782 /* UIKit.framework in Frameworks */,
 				94C85D19163EA0F200EDF782 /* Foundation.framework in Frameworks */,
+				94C85D16163EA0F200EDF782 /* SenTestingKit.framework in Frameworks */,
+				94D813B016CAF59D00EAB73F /* UIKit.framework in Frameworks */,
 				94C85D1C163EA0F200EDF782 /* libHandsy.a in Frameworks */,
 				8C1E42DDFC804362B5FE5D66 /* libPods-Specs.a in Frameworks */,
 			);
@@ -119,9 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C85D7D163EAB0800EDF782 /* UIKit.framework in Frameworks */,
 				94C85D7E163EAB0800EDF782 /* Foundation.framework in Frameworks */,
-				94C85D7F163EAB0800EDF782 /* CoreGraphics.framework in Frameworks */,
+				94D813AF16CAF59400EAB73F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +154,8 @@
 			children = (
 				94C85D06163EA0F200EDF782 /* Foundation.framework */,
 				94C85D15163EA0F200EDF782 /* SenTestingKit.framework */,
-				94C85D17163EA0F200EDF782 /* UIKit.framework */,
+				94D813AD16CAF58600EAB73F /* UIKit.framework */,
 				FB5C16ED441D4F98837A4370 /* libPods-Specs.a */,
-				94C85D5E163EAAB200EDF782 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,6 +511,10 @@
 			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Specs/HDYSpecHelper.h;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
@@ -527,6 +529,10 @@
 			baseConfigurationReference = 30CB4E638F1141EA960CD4F7 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Specs/HDYSpecHelper.h;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
