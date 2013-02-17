@@ -17,7 +17,7 @@ This library uses private APIs, and so should not be used in production.
 Installation
 ============
 
-Handsy can be installed with CocoaPods. Just add `pod 'Handsy'` to your Podfile.
+Handsy can be installed with CocoaPods. Just add `pod 'Handsy', '~> 0.1.0'` to your Podfile.
 
 License
 =======
